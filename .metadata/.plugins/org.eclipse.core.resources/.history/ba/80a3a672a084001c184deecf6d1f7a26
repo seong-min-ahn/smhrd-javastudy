@@ -1,0 +1,13 @@
+package Ex02_积己磊;
+
+public class 己利包府橇肺弊伐 {
+
+	public static void main(String[] args) {
+		//1.切积 按眉(object)积己
+		Student s1 =new Student();
+		Student s2 =new Student();
+		
+
+	}
+
+}

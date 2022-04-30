@@ -1,0 +1,41 @@
+package Ex02_생성자;
+
+public class Student {
+	// 필드
+	private String name; // 이름
+	private String stuNum; // 학번
+	private int age; // 나이
+	private int javaScore;
+	private int databaseScore;
+	private int pythonScore;
+	private double avg; // 평균점수
+
+	// 생성자: 객체를 생성하는 메소드
+	// 1.반환타입이 존재하지 않는다.
+	// 2. 메소드 이름이 클래스 이름과 똑같다.
+	// 3. 객체가 생성될때 딱 한번만 호출가능.
+
+//	public Student() {// 디폴트 생성자
+//
+//	}
+	// 생성자 오버로딩
+	public Student(String name, String stuNum) {
+		this.name = name;
+		this.stuNum = stuNum;
+	}
+	// 메소드
+	public void calAvg() {
+		avg = (javaScore + databaseScore + pythonScore) / 3.0;
+	}
+	public void setjavaScore(int javaScore) {
+		this.javaScore = javaScore;
+	}
+	public void setDatabaseScore(int databaseScore) {
+		this.databaseScore = databaseScore;
+	}
+	public void setpythonScore(int pythonScore) {
+		this.pythonScore = pythonScore;
+	}
+	
+
+}

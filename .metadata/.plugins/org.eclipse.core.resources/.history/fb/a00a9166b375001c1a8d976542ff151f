@@ -1,0 +1,55 @@
+import java.util.Scanner;
+
+public class Ex02_1자판기 {
+
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		int money = 0;  int price = 0; int choice1 = 0; int choice2 = 0;
+		boolean a = true;
+		
+		System.out.println("-----자판기 프로그램-----");
+		System.out.println("금액을 넣어주세요>>");
+		money = scan.nextInt();
+		
+		while(a)
+			if(money>price) {
+				System.out.print("[1]메뉴 선택 [2]잔돈 반환하기 >>");
+				choice1 = scan.nextInt();
+				if(choice1==1) {
+					System.out.println("==메뉴를 고르세요=== ");
+					System.out.print("[1]콜라(800원) [2]핫식스(1200월) [3]비타500(2000원) >>");
+					choice2 = scan.nextInt();
+					if(choice2==1) {
+						price=800;
+						System.out.println("콜라가 나왔습니다.");
+					}else if(choice2==2){
+						price=1200;
+						System.out.println("핫식스가 나왔습니다.");
+					}else if(choice2==3) {
+						price=2000;
+						System.out.println("비타500이 나왔습니다.");
+					}
+					
+					money-=price;	
+				}else if(choice2==2){
+					System.out.println("==잔돈을 반환합니다.== ");
+					a=false;
+					money+=price;
+					System.out.println("잔돈 : "+ (money)+"원");
+					System.out.println("천원 : "+ (money/1000)+"개");
+					System.out.println("오백원 : "+ (money%1000/500)+"개");
+					System.out.println("백원 : "+ (money%1000%500/100)+"개");
+					
+					
+				}
+				
+				
+				
+				
+			
+		}
+
+	}
+
+}

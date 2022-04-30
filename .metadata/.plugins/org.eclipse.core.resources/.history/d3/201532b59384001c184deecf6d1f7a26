@@ -1,0 +1,17 @@
+package Ex01클래스;
+
+public class Tvsimlator {
+
+	public static void main(String[] args) {
+		//객체 생성
+		//클래스명 객체명 = new 클래스명();
+		TV tv1 = new TV();
+		TV tv2 = new TV();
+		
+	    tv1.브랜드 = "삼성";
+		System.out.println(tv1.브랜드);
+		System.out.println(tv2.브랜드);
+
+	}
+
+}

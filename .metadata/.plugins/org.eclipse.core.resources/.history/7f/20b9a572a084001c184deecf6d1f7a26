@@ -1,0 +1,24 @@
+package Ex02_생성자;
+
+public class Student {
+	//필드
+	private String name; //이름 
+	private String stuNum; //학번 
+	private int age; //나이
+	private int javaScore;
+	private int databaseScore;
+	private int pythonScore;
+	private double avg; //평균점수 
+	
+	//생성자: 객체를 생성하는 메소드
+	public Student() {
+		System.out.println("생성자호출");
+	}
+	
+	//메소드
+	public void calAvg() {
+		avg = (javaScore+ databaseScore+ pythonScore)/3.0;
+	}
+	
+
+}
